@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services - Dr. Karin McFarlin, ND</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#e7ecdf",
+                      "on-primary-fixed": "#0d1f12",
+                      "warm-cream": "#FDFBF7",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed-variant": "#43483f",
+                      "surface-container-lowest": "#ffffff",
+                      "on-background": "#1a1c1d",
+                      "on-error": "#ffffff",
+                      "on-secondary-fixed-variant": "#474744",
+                      "on-tertiary": "#ffffff",
+                      "background": "#f9f9fa",
+                      "secondary-fixed": "#e4e2dd",
+                      "outline-variant": "#c3c8c1",
+                      "deep-charcoal": "#1A1C1D",
+                      "primary": "#425646",
+                      "surface-tint": "#4f6353",
+                      "on-secondary-fixed": "#1b1c19",
+                      "on-error-container": "#93000a",
+                      "surface-bright": "#f9f9fa",
+                      "on-primary": "#ffffff",
+                      "on-primary-fixed-variant": "#384b3c",
+                      "success-green": "#4A6B53",
+                      "clinical-sage": "#7A8C7E",
+                      "secondary-fixed-dim": "#c8c6c2",
+                      "tertiary-fixed": "#dfe4d8",
+                      "inverse-on-surface": "#f0f1f1",
+                      "secondary-container": "#e1dfdb",
+                      "surface-container-high": "#e8e8e9",
+                      "inverse-primary": "#b6ccb8",
+                      "on-surface": "#1a1c1d",
+                      "inverse-surface": "#2f3132",
+                      "error": "#ba1a1a",
+                      "on-surface-variant": "#434843",
+                      "tertiary-fixed-dim": "#c3c8bd",
+                      "surface-container": "#eeeeef",
+                      "primary-fixed": "#d2e8d3",
+                      "secondary": "#5e5e5b",
+                      "outline": "#737872",
+                      "on-secondary-container": "#63635f",
+                      "tertiary": "#4d534a",
+                      "tertiary-container": "#656b61",
+                      "surface-container-highest": "#e2e2e3",
+                      "surface-dim": "#dadadb",
+                      "on-tertiary-fixed": "#181d16",
+                      "on-primary-container": "#d9f0da",
+                      "on-secondary": "#ffffff",
+                      "surface-variant": "#e2e2e3",
+                      "surface": "#f9f9fa",
+                      "soft-linen": "#ECE9E4",
+                      "primary-fixed-dim": "#b6ccb8",
+                      "surface-container-low": "#f3f3f4",
+                      "primary-container": "#5a6e5d"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "stack-md": "16px",
+                      "stack-sm": "8px",
+                      "container-max": "1280px",
+                      "stack-lg": "32px",
+                      "gutter": "24px",
+                      "section-gap": "120px",
+                      "margin-x": "32px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Open Sans"
+                      ],
+                      "body-lg": [
+                              "Open Sans"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ],
+                      "label-md": [
+                              "Open Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "caption": [
+                              "Open Sans"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "56px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased pt-[88px]">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-4 bg-warm-cream/80 backdrop-blur-md dark:bg-deep-charcoal/80 border-b border-clinical-sage/20 transition-all duration-300" id="navbar">
+<div class="flex items-center gap-4">
+<span class="font-headline-md text-headline-md text-deep-charcoal dark:text-warm-cream">Dr. Karin McFarlin, ND</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-secondary hover:text-primary-container transition-all font-label-md text-label-md hover:scale-95 duration-150" href="#">Home</a>
+<a class="text-secondary hover:text-primary-container transition-all font-label-md text-label-md hover:scale-95 duration-150" href="#">About</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md hover:text-primary-container transition-all scale-95 duration-150" href="#">Services</a>
+<a class="text-secondary hover:text-primary-container transition-all font-label-md text-label-md hover:scale-95 duration-150" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden md:inline-flex items-center justify-center bg-clinical-sage text-white font-body-md font-bold py-2 px-6 rounded hover:bg-success-green transition-colors">
+                Book Discovery Call
+            </button>
+<button class="md:hidden text-deep-charcoal dark:text-warm-cream p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Page Header -->
+<section class="py-section-gap px-gutter bg-soft-linen relative overflow-hidden">
+<div class="max-w-container-max mx-auto relative z-10 text-center">
+<h1 class="font-display-lg text-display-lg text-deep-charcoal mb-stack-md md:font-display-lg font-headline-lg-mobile text-headline-lg-mobile">Our Services &amp; Modalities</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto">Integrative, evidence-based approaches to naturopathic medicine, tailored to your unique physiological needs.</p>
+</div>
+<!-- Decorative subtle element -->
+<div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-warm-cream/30 to-transparent pointer-events-none"></div>
+</section>
+<!-- Introduction to Naturopathic Medicine -->
+<section class="py-section-gap px-gutter bg-warm-cream">
+<div class="max-w-container-max mx-auto grid md:grid-cols-2 gap-gutter items-center">
+<div>
+<img alt="Clinic Consultation Room" class="w-full h-auto rounded-xl border border-clinical-sage/20 object-cover aspect-[4/3]" data-alt="A bright, clean clinic room with natural light streaming in, featuring a modern consultation desk and subtle botanical elements in the background, conveying a professional yet calming medical environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBloAQ3xQnOdmETRJx7p5ioZfraXeS8Gdq5i8SN2m7zaqqE-HbGJfXnJqlu09mQidOYQPxEWMtsO_ltcLgpuHHEwQFsuPhmcCy87O5BwidMyhJfNe8YoLGJNgqG25NAfabE9gT2Wx0_MkddKx3jONq1tvlBJze5gcmD-Plor8Z5wDSwvY_e9aNMM0rJkEjDoVf0ZuS9aENR0EFoK_b2bYVlFGHJSnAkSbHEkoHhGfsyvQSLDSz8EtC"/>
+</div>
+<div class="pl-0 md:pl-gutter">
+<h2 class="font-headline-lg text-headline-lg text-deep-charcoal mb-stack-lg md:font-headline-lg font-headline-lg-mobile text-headline-lg-mobile">The Integrative Approach</h2>
+<p class="font-body-md text-body-md text-secondary mb-stack-md">
+                    Naturopathic medicine bridges the gap between conventional diagnostics and natural therapeutics. We don't just treat symptoms; we investigate the underlying physiological imbalances driving them.
+                </p>
+<p class="font-body-md text-body-md text-secondary mb-stack-lg">
+                    By combining rigorous clinical assessment with targeted, evidence-based natural interventions, we create comprehensive treatment plans designed to restore optimal function and long-term health.
+                </p>
+<ul class="space-y-stack-sm">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-clinical-sage" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-deep-charcoal">Evidence-Informed Practice</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-clinical-sage" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-deep-charcoal">Root-Cause Investigation</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-clinical-sage" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-deep-charcoal">Individualized Treatment Plans</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Services Grid (Bento Style) -->
+<section class="py-section-gap px-gutter bg-soft-linen">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-section-gap">
+<h2 class="font-headline-lg text-headline-lg text-deep-charcoal mb-stack-sm md:font-headline-lg font-headline-lg-mobile text-headline-lg-mobile">Clinical Tools &amp; Modalities</h2>
+<p class="font-body-md text-body-md text-secondary">Carefully selected therapies to support your health journey.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter auto-rows-min">
+<!-- Botanical Medicine -->
+<div class="md:col-span-8 bg-warm-cream rounded-xl p-[32px] border border-clinical-sage/20 flex flex-col justify-between group hover:border-clinical-sage/50 transition-colors">
+<div>
+<div class="w-12 h-12 bg-soft-linen rounded flex items-center justify-center mb-stack-md text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">local_florist</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-deep-charcoal mb-stack-sm">Botanical Medicine</h3>
+<p class="font-body-md text-body-md text-secondary max-w-xl">
+                            Utilizing the therapeutic properties of plants to support physiological function. We use standardized extracts, tinctures, and targeted herbal formulations based on modern pharmacological research to address specific clinical presentations safely and effectively.
+                        </p>
+</div>
+</div>
+<!-- Lab Testing -->
+<div class="md:col-span-4 bg-warm-cream rounded-xl p-[32px] border border-clinical-sage/20 flex flex-col justify-between group hover:border-clinical-sage/50 transition-colors">
+<div>
+<div class="w-12 h-12 bg-soft-linen rounded flex items-center justify-center mb-stack-md text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">science</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-deep-charcoal mb-stack-sm">Lab &amp; Diagnostic Testing</h3>
+<p class="font-body-md text-body-md text-secondary">
+                            Comprehensive blood panels and functional testing (hormone panels, digestive analysis) to objectify subjective symptoms and guide precise treatment strategies.
+                        </p>
+</div>
+</div>
+<!-- Diet & Lifestyle -->
+<div class="md:col-span-4 bg-warm-cream rounded-xl p-[32px] border border-clinical-sage/20 flex flex-col justify-between group hover:border-clinical-sage/50 transition-colors">
+<div>
+<div class="w-12 h-12 bg-soft-linen rounded flex items-center justify-center mb-stack-md text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">restaurant_menu</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-deep-charcoal mb-stack-sm">Diet &amp; Lifestyle Counselling</h3>
+<p class="font-body-md text-body-md text-secondary">
+                            Foundational support focusing on clinical nutrition, sleep architecture, and stress mitigation. Tailored interventions to correct metabolic imbalances and optimize daily function.
+                        </p>
+</div>
+</div>
+<!-- TCM / Acupuncture -->
+<div class="md:col-span-8 bg-warm-cream rounded-xl p-[32px] border border-clinical-sage/20 flex flex-col justify-between group hover:border-clinical-sage/50 transition-colors">
+<div>
+<div class="w-12 h-12 bg-soft-linen rounded flex items-center justify-center mb-stack-md text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">acupuncture</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-deep-charcoal mb-stack-sm">Traditional Chinese Medicine &amp; Acupuncture</h3>
+<p class="font-body-md text-body-md text-secondary max-w-xl">
+                            Integrating traditional diagnostic frameworks with modern anatomical understanding. Acupuncture is utilized to modulate the nervous system, manage acute and chronic pain, support hormonal regulation, and improve peripheral circulation.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- What to Expect (Timeline/Steps) -->
+<section class="py-section-gap px-gutter bg-warm-cream">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-section-gap">
+<h2 class="font-headline-lg text-headline-lg text-deep-charcoal mb-stack-sm md:font-headline-lg font-headline-lg-mobile text-headline-lg-mobile">What to Expect</h2>
+<p class="font-body-md text-body-md text-secondary">The structured clinical pathway for new patients.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-gutter">
+<!-- Step 1 -->
+<div class="relative pl-gutter border-l border-clinical-sage/20 pb-stack-lg md:pb-0 md:border-l-0 md:border-t md:pt-gutter md:pl-0">
+<div class="absolute left-[-5px] top-0 w-[10px] h-[10px] bg-clinical-sage rounded-full md:top-[-5px] md:left-0"></div>
+<span class="font-label-md text-label-md text-clinical-sage block mb-stack-sm uppercase tracking-wider">Step 01</span>
+<h3 class="font-headline-md text-headline-md text-deep-charcoal mb-stack-md">Initial Consultation</h3>
+<p class="font-body-md text-body-md text-secondary">
+                        A thorough 60-90 minute intake reviewing your complete medical history, current symptoms, and health goals. We may request existing lab work or requisition new testing to establish a baseline.
+                    </p>
+</div>
+<!-- Step 2 -->
+<div class="relative pl-gutter border-l border-clinical-sage/20 pb-stack-lg md:pb-0 md:border-l-0 md:border-t md:pt-gutter md:pl-0">
+<div class="absolute left-[-5px] top-0 w-[10px] h-[10px] bg-clinical-sage rounded-full md:top-[-5px] md:left-0"></div>
+<span class="font-label-md text-label-md text-clinical-sage block mb-stack-sm uppercase tracking-wider">Step 02</span>
+<h3 class="font-headline-md text-headline-md text-deep-charcoal mb-stack-md">Assessment &amp; Planning</h3>
+<p class="font-body-md text-body-md text-secondary">
+                        Following the initial intake and lab review, a targeted, individualized treatment plan is formulated. This plan prioritizes interventions based on clinical urgency and your capacity for implementation.
+                    </p>
+</div>
+<!-- Step 3 -->
+<div class="relative pl-gutter border-l border-clinical-sage/20 md:border-l-0 md:border-t md:pt-gutter md:pl-0">
+<div class="absolute left-[-5px] top-0 w-[10px] h-[10px] bg-clinical-sage rounded-full md:top-[-5px] md:left-0"></div>
+<span class="font-label-md text-label-md text-clinical-sage block mb-stack-sm uppercase tracking-wider">Step 03</span>
+<h3 class="font-headline-md text-headline-md text-deep-charcoal mb-stack-md">Follow-up &amp; Optimization</h3>
+<p class="font-body-md text-body-md text-secondary">
+                        Regular check-ins (typically 30-45 minutes) to monitor progress, re-evaluate lab markers, and adjust therapeutic dosages or modalities as your physiology responds and adapts.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-section-gap px-gutter bg-primary text-center">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-warm-cream mb-stack-md md:font-headline-lg font-headline-lg-mobile text-headline-lg-mobile">Ready to begin your journey to better health?</h2>
+<p class="font-body-lg text-body-lg text-warm-cream/80 mb-stack-lg">Schedule a complimentary discovery call to discuss your health concerns and determine if our clinical approach is the right fit for you.</p>
+<button class="inline-flex items-center justify-center bg-warm-cream text-deep-charcoal font-body-md font-bold py-3 px-8 rounded hover:bg-soft-linen transition-colors">
+                Book a Free Discovery Call
+            </button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-section-gap px-margin-x flex flex-col items-center space-y-stack-lg bg-soft-linen dark:bg-deep-charcoal border-t border-clinical-sage/10">
+<div class="font-headline-md text-headline-md text-deep-charcoal dark:text-warm-cream text-center">
+            Dr. Karin McFarlin, ND
+        </div>
+<nav class="flex flex-wrap justify-center gap-6">
+<a class="font-body-md text-body-md text-secondary hover:text-success-green transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-secondary hover:text-success-green transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-secondary hover:text-success-green transition-colors" href="#">Patient Portal</a>
+<a class="font-body-md text-body-md text-secondary hover:text-success-green transition-colors" href="#">JaneApp Booking</a>
+</nav>
+<p class="font-caption text-caption text-secondary text-center max-w-2xl">
+            © 2024 Dr. Karin McFarlin, ND. All rights reserved. Naturopathic medical services provided with evidence-based integrity.
+        </p>
+</footer>
+<script>
+        // Simple script to handle navbar background on scroll if needed, though backdrop-blur handles most of it nicely.
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-sm');
+            } else {
+                navbar.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+</body></html>

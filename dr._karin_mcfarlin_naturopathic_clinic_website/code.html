@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dr. Karin McFarlin, ND | Empowering Your Journey to Optimal Health</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#e7ecdf",
+                      "on-primary-fixed": "#0d1f12",
+                      "warm-cream": "#FDFBF7",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed-variant": "#43483f",
+                      "surface-container-lowest": "#ffffff",
+                      "on-background": "#1a1c1d",
+                      "on-error": "#ffffff",
+                      "on-secondary-fixed-variant": "#474744",
+                      "on-tertiary": "#ffffff",
+                      "background": "#f9f9fa",
+                      "secondary-fixed": "#e4e2dd",
+                      "outline-variant": "#c3c8c1",
+                      "deep-charcoal": "#1A1C1D",
+                      "primary": "#425646",
+                      "surface-tint": "#4f6353",
+                      "on-secondary-fixed": "#1b1c19",
+                      "on-error-container": "#93000a",
+                      "surface-bright": "#f9f9fa",
+                      "on-primary": "#ffffff",
+                      "on-primary-fixed-variant": "#384b3c",
+                      "success-green": "#4A6B53",
+                      "clinical-sage": "#7A8C7E",
+                      "secondary-fixed-dim": "#c8c6c2",
+                      "tertiary-fixed": "#dfe4d8",
+                      "inverse-on-surface": "#f0f1f1",
+                      "secondary-container": "#e1dfdb",
+                      "surface-container-high": "#e8e8e9",
+                      "inverse-primary": "#b6ccb8",
+                      "on-surface": "#1a1c1d",
+                      "inverse-surface": "#2f3132",
+                      "error": "#ba1a1a",
+                      "on-surface-variant": "#434843",
+                      "tertiary-fixed-dim": "#c3c8bd",
+                      "surface-container": "#eeeeef",
+                      "primary-fixed": "#d2e8d3",
+                      "secondary": "#5e5e5b",
+                      "outline": "#737872",
+                      "on-secondary-container": "#63635f",
+                      "tertiary": "#4d534a",
+                      "tertiary-container": "#656b61",
+                      "surface-container-highest": "#e2e2e3",
+                      "surface-dim": "#dadadb",
+                      "on-tertiary-fixed": "#181d16",
+                      "on-primary-container": "#d9f0da",
+                      "on-secondary": "#ffffff",
+                      "surface-variant": "#e2e2e3",
+                      "surface": "#f9f9fa",
+                      "soft-linen": "#ECE9E4",
+                      "primary-fixed-dim": "#b6ccb8",
+                      "surface-container-low": "#f3f3f4",
+                      "primary-container": "#5a6e5d"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "stack-md": "16px",
+                      "stack-sm": "8px",
+                      "container-max": "1280px",
+                      "stack-lg": "32px",
+                      "gutter": "24px",
+                      "section-gap": "120px",
+                      "margin-x": "32px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Open Sans"
+                      ],
+                      "body-lg": [
+                              "Open Sans"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ],
+                      "label-md": [
+                              "Open Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "caption": [
+                              "Open Sans"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "56px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+        
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased pt-24">
+<!-- TopNavBar Shared Component -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-4 bg-transparent border-b border-clinical-sage/20 bg-warm-cream/80 backdrop-blur-md dark:bg-deep-charcoal/80">
+<div class="flex items-center gap-gutter">
+<a class="font-headline-md text-headline-md text-deep-charcoal dark:text-warm-cream" href="#">Dr. Karin McFarlin, ND</a>
+</div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1" href="#">Home</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary-container transition-all" href="#">About</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary-container transition-all" href="#">Services</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary-container transition-all" href="#">Contact</a>
+</div>
+<div class="hidden md:flex items-center">
+<button class="bg-clinical-sage text-on-primary font-label-md text-label-md py-3 px-6 rounded-DEFAULT hover:opacity-90 transition-opacity">Book Discovery Call</button>
+</div>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-deep-charcoal">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full min-h-[819px] flex flex-col md:flex-row items-center justify-center px-margin-x py-section-gap gap-gutter bg-soft-linen">
+<div class="flex-1 max-w-2xl z-10 space-y-stack-lg">
+<h1 class="font-display-lg text-display-lg text-deep-charcoal">Empowering Your Journey to Optimal Health</h1>
+<p class="font-body-lg text-body-lg text-secondary">Evidence-based naturopathic medicine tailored to your unique biology.</p>
+<div class="flex flex-col sm:flex-row gap-stack-md pt-stack-sm">
+<button class="bg-clinical-sage text-on-primary font-label-md text-label-md py-4 px-8 rounded-DEFAULT hover:opacity-90 transition-opacity text-center">Book Discovery Call</button>
+<button class="border border-deep-charcoal text-deep-charcoal font-label-md text-label-md py-4 px-8 rounded-DEFAULT hover:bg-deep-charcoal hover:text-warm-cream transition-colors text-center">Explore Services</button>
+</div>
+</div>
+<div class="flex-1 w-full relative">
+<div class="aspect-[4/5] md:aspect-square w-full max-w-lg mx-auto overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover" data-alt="A bright, professional and approachable portrait of a female naturopathic doctor standing in a modern, clean clinical space with natural light and subtle green plants in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1QyfkZnDLUCId3_OO4Xk3nEe6wr5wLckIO2mDvZvn3n41-NjESqH-HOhVduAvdyhCmCK2vOefi_sm_8IhukOfk3Xz2PkSqaGjkINMakZOm1yInZJZzbHlGDzBT6fQEplodMUhOs_H0ZWST9oM858_7zulKmQmDfk236TzvQoz8Iodr2DCApzjFzf-Nhc-wy6zXRWmsvBmGcAa1CxbcrG-N_vZdBRkMbDrVWH-yIqEHbWfGBlmLtEV"/>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-clinical-sage/10 rounded-full blur-3xl -z-10"></div>
+</div>
+</header>
+<!-- My Approach Section -->
+<section class="w-full max-w-container-max mx-auto px-margin-x py-section-gap">
+<div class="grid md:grid-cols-2 gap-gutter items-center">
+<div class="order-2 md:order-1 relative">
+<img class="w-full aspect-[4/3] object-cover rounded-xl shadow-sm border border-soft-linen" data-alt="A close-up shot of a modern medical consultation room desk featuring a stethoscope resting gracefully next to a small mortar and pestle filled with dried organic herbs, warmly lit." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJFHZLrF_7TALnQMDOjvmIRP13zmThvjGTJtdtkxTqWEdKtNLPk09K8fLZFVSXWEm9ynwmpxxIvH7zvpZCRd45jYSjW3q87105DqUoNXzduBRJiykBTyX_yD3SaREj3vcRTfB9iAf1WPV5oPaBrKa222ivfLbyElqezgd2X8h78cwl-sL4NOP9TaALyPOvtknCXiMyrNLHWsI1xCYnziqqDdCkxx7vOHU0kpQV58psLGrI-tTEW5sL"/>
+</div>
+<div class="order-1 md:order-2 space-y-stack-md">
+<h2 class="font-headline-lg text-headline-lg md:text-headline-lg text-deep-charcoal">My Approach</h2>
+<div class="w-16 h-1 bg-clinical-sage"></div>
+<p class="font-body-md text-body-md text-secondary">
+                    True health is not merely the absence of disease, but a state of vibrant balance. My practice bridges the gap between rigorous medical science and holistic traditions.
+                </p>
+<p class="font-body-md text-body-md text-secondary">
+                    By understanding your unique biochemical individuality, we move beyond symptom management to address root causes, empowering you with sustainable, evidence-based strategies for lasting wellness.
+                </p>
+</div>
+</div>
+</section>
+<!-- Core Focus Areas (Bento Grid) -->
+<section class="w-full bg-soft-linen py-section-gap px-margin-x">
+<div class="max-w-container-max mx-auto space-y-stack-lg">
+<div class="text-center space-y-stack-sm max-w-2xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-deep-charcoal">Core Focus Areas</h2>
+<p class="font-body-md text-body-md text-secondary">Targeted strategies for complex, chronic conditions.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter auto-rows-[250px]">
+<!-- Autoimmune -->
+<div class="md:col-span-2 bg-warm-cream rounded-xl p-8 border border-clinical-sage/20 flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300 group">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-4xl text-clinical-sage">immunology</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-deep-charcoal mb-2">Autoimmune</h3>
+<p class="font-body-md text-body-md text-secondary line-clamp-2">Calming immune dysregulation through targeted nutritional and lifestyle interventions.</p>
+</div>
+</div>
+<!-- Digestion -->
+<div class="bg-warm-cream rounded-xl p-8 border border-clinical-sage/20 flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300 group">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-4xl text-clinical-sage">water_drop</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-deep-charcoal mb-2">Digestion</h3>
+<p class="font-body-md text-body-md text-secondary line-clamp-2">Restoring microbiome balance for optimal absorption.</p>
+</div>
+</div>
+<!-- Metabolic Health -->
+<div class="bg-warm-cream rounded-xl p-8 border border-clinical-sage/20 flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300 group">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-4xl text-clinical-sage">monitor_weight</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-deep-charcoal mb-2">Metabolic Health</h3>
+<p class="font-body-md text-body-md text-secondary line-clamp-2">Optimizing energy production and metabolic pathways.</p>
+</div>
+</div>
+<!-- Hormones -->
+<div class="bg-warm-cream rounded-xl p-8 border border-clinical-sage/20 flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300 group">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-4xl text-clinical-sage">female</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-deep-charcoal mb-2">Hormones</h3>
+<p class="font-body-md text-body-md text-secondary line-clamp-2">Balancing endocrine function for stable mood and vitality.</p>
+</div>
+</div>
+<!-- Healthy Aging -->
+<div class="bg-warm-cream rounded-xl p-8 border border-clinical-sage/20 flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300 group">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-4xl text-clinical-sage">self_improvement</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-deep-charcoal mb-2">Healthy Aging</h3>
+<p class="font-body-md text-body-md text-secondary line-clamp-2">Proactive strategies for longevity and cellular health.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works Section -->
+<section class="w-full max-w-container-max mx-auto px-margin-x py-section-gap">
+<div class="text-center space-y-stack-sm max-w-2xl mx-auto mb-16">
+<h2 class="font-headline-lg text-headline-lg text-deep-charcoal">How It Works</h2>
+<p class="font-body-md text-body-md text-secondary">A clear, structured path towards understanding your body.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-gutter relative">
+<!-- Connecting Line (Desktop) -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-[1px] bg-clinical-sage/20 -z-10 -translate-y-1/2"></div>
+<!-- Step 1 -->
+<div class="bg-warm-cream rounded-xl p-8 border border-clinical-sage/20 text-center space-y-stack-md relative z-10">
+<div class="w-16 h-16 bg-soft-linen rounded-full flex items-center justify-center mx-auto text-clinical-sage font-headline-md text-headline-md border border-clinical-sage/10">1</div>
+<h3 class="font-headline-md text-headline-md text-deep-charcoal text-xl">Discovery Call</h3>
+<p class="font-body-md text-body-md text-secondary">A complimentary 15-minute consultation to discuss your primary concerns and determine if we are the right fit.</p>
+</div>
+<!-- Step 2 -->
+<div class="bg-warm-cream rounded-xl p-8 border border-clinical-sage/20 text-center space-y-stack-md relative z-10">
+<div class="w-16 h-16 bg-soft-linen rounded-full flex items-center justify-center mx-auto text-clinical-sage font-headline-md text-headline-md border border-clinical-sage/10">2</div>
+<h3 class="font-headline-md text-headline-md text-deep-charcoal text-xl">Comprehensive Assessment</h3>
+<p class="font-body-md text-body-md text-secondary">An in-depth review of your health history, current symptoms, and functional lab testing recommendations.</p>
+</div>
+<!-- Step 3 -->
+<div class="bg-warm-cream rounded-xl p-8 border border-clinical-sage/20 text-center space-y-stack-md relative z-10">
+<div class="w-16 h-16 bg-soft-linen rounded-full flex items-center justify-center mx-auto text-clinical-sage font-headline-md text-headline-md border border-clinical-sage/10">3</div>
+<h3 class="font-headline-md text-headline-md text-deep-charcoal text-xl">Personalized Plan</h3>
+<p class="font-body-md text-body-md text-secondary">Implementation of a tailored treatment protocol, including nutrition, lifestyle adjustments, and targeted supplementation.</p>
+</div>
+</div>
+</section>
+<!-- Footer Shared Component -->
+<footer class="w-full py-section-gap px-margin-x flex flex-col items-center space-y-stack-lg border-t border-clinical-sage/10 bg-soft-linen dark:bg-deep-charcoal">
+<div class="font-headline-md text-headline-md text-deep-charcoal dark:text-warm-cream">Dr. Karin McFarlin, ND</div>
+<div class="flex flex-wrap justify-center gap-gutter">
+<a class="font-body-md text-body-md text-secondary hover:text-success-green transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-secondary hover:text-success-green transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-secondary hover:text-success-green transition-colors" href="#">Patient Portal</a>
+<a class="font-body-md text-body-md text-secondary hover:text-success-green transition-colors" href="#">JaneApp Booking</a>
+</div>
+<div class="font-caption text-caption text-secondary text-center max-w-2xl">
+            © 2024 Dr. Karin McFarlin, ND. All rights reserved. Naturopathic medical services provided with evidence-based integrity.
+        </div>
+</footer>
+</body></html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact &amp; Booking | Dr. Karin McFarlin, ND</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#e7ecdf",
+                      "on-primary-fixed": "#0d1f12",
+                      "warm-cream": "#FDFBF7",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed-variant": "#43483f",
+                      "surface-container-lowest": "#ffffff",
+                      "on-background": "#1a1c1d",
+                      "on-error": "#ffffff",
+                      "on-secondary-fixed-variant": "#474744",
+                      "on-tertiary": "#ffffff",
+                      "background": "#f9f9fa",
+                      "secondary-fixed": "#e4e2dd",
+                      "outline-variant": "#c3c8c1",
+                      "deep-charcoal": "#1A1C1D",
+                      "primary": "#425646",
+                      "surface-tint": "#4f6353",
+                      "on-secondary-fixed": "#1b1c19",
+                      "on-error-container": "#93000a",
+                      "surface-bright": "#f9f9fa",
+                      "on-primary": "#ffffff",
+                      "on-primary-fixed-variant": "#384b3c",
+                      "success-green": "#4A6B53",
+                      "clinical-sage": "#7A8C7E",
+                      "secondary-fixed-dim": "#c8c6c2",
+                      "tertiary-fixed": "#dfe4d8",
+                      "inverse-on-surface": "#f0f1f1",
+                      "secondary-container": "#e1dfdb",
+                      "surface-container-high": "#e8e8e9",
+                      "inverse-primary": "#b6ccb8",
+                      "on-surface": "#1a1c1d",
+                      "inverse-surface": "#2f3132",
+                      "error": "#ba1a1a",
+                      "on-surface-variant": "#434843",
+                      "tertiary-fixed-dim": "#c3c8bd",
+                      "surface-container": "#eeeeef",
+                      "primary-fixed": "#d2e8d3",
+                      "secondary": "#5e5e5b",
+                      "outline": "#737872",
+                      "on-secondary-container": "#63635f",
+                      "tertiary": "#4d534a",
+                      "tertiary-container": "#656b61",
+                      "surface-container-highest": "#e2e2e3",
+                      "surface-dim": "#dadadb",
+                      "on-tertiary-fixed": "#181d16",
+                      "on-primary-container": "#d9f0da",
+                      "on-secondary": "#ffffff",
+                      "surface-variant": "#e2e2e3",
+                      "surface": "#f9f9fa",
+                      "soft-linen": "#ECE9E4",
+                      "primary-fixed-dim": "#b6ccb8",
+                      "surface-container-low": "#f3f3f4",
+                      "primary-container": "#5a6e5d"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "stack-md": "16px",
+                      "stack-sm": "8px",
+                      "container-max": "1280px",
+                      "stack-lg": "32px",
+                      "gutter": "24px",
+                      "section-gap": "120px",
+                      "margin-x": "32px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Open Sans"
+                      ],
+                      "body-lg": [
+                              "Open Sans"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ],
+                      "label-md": [
+                              "Open Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "caption": [
+                              "Open Sans"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "56px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased pt-24 selection:bg-clinical-sage selection:text-warm-cream">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-4 bg-transparent bg-warm-cream/80 backdrop-blur-md dark:bg-deep-charcoal/80 border-b border-clinical-sage/20 transition-all duration-300" id="navbar">
+<div class="font-headline-md text-headline-md text-deep-charcoal dark:text-warm-cream flex items-center gap-2">
+<a class="hover:opacity-80 transition-opacity" href="/">Dr. Karin McFarlin, ND</a>
+</div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="text-secondary hover:text-primary transition-colors font-label-md text-label-md" href="/home">Home</a>
+<a class="text-secondary hover:text-primary transition-colors font-label-md text-label-md" href="/about">About</a>
+<a class="text-secondary hover:text-primary transition-colors font-label-md text-label-md" href="/services">Services</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md" href="/contact">Contact</a>
+</div>
+<div class="hidden md:flex">
+<a class="bg-clinical-sage hover:bg-success-green text-warm-cream font-label-md text-label-md px-6 py-3 rounded hover:text-primary-container transition-all active:scale-95 duration-150" href="#booking">Book Discovery Call</a>
+</div>
+<!-- Mobile Menu Button -->
+<button aria-label="Toggle Menu" class="md:hidden text-deep-charcoal p-2">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="py-section-gap px-margin-x max-w-container-max mx-auto md:py-24">
+<div class="grid md:grid-cols-2 gap-gutter items-center">
+<div class="space-y-stack-md">
+<h1 class="font-display-lg text-display-lg text-deep-charcoal md:text-display-lg text-headline-lg-mobile">
+                        Let's connect.
+                    </h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-lg">
+                        Ready to take the next step in your health journey? Whether you have questions or are ready to book, I'm here to support you.
+                    </p>
+</div>
+<div class="relative h-[400px] rounded-xl overflow-hidden border border-soft-linen">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A serene, brightly lit naturopathic clinic reception area, featuring a modern oak desk, lush green potted plants, and soft, natural light streaming through large windows. The mood is calm, professional, and inviting. Light mode aesthetic with warm cream and sage tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCICn_xRu9w6xQcy_eIQNj_yUpHfT-qTB2ejWhJfs9qv-zl5yCiXrSnfQje5aiP6HUYpuGJyrkbVDyTciuhHFiH3wJ9PWLGHinV5udpWycNE_vzw8IPL6L9Fde2oNkhU4JRf8vhW_BVE7KKQb1_Tf5lorE_d2TJoq-tkWn79p1I22Y5cB3-3DztEmlbwyEzYxp1T1Mr7_cic5eQZ1ZiRkkNY03nTj7pIPcQhZ7wXDzuY6FO7ZJ-xox-"/>
+</div>
+</div>
+</section>
+<!-- Booking & Contact Bento Grid -->
+<section class="py-section-gap px-margin-x max-w-container-max mx-auto bg-soft-linen rounded-[2rem] md:rounded-[4rem] my-section-gap mx-4 md:mx-auto">
+<div class="grid md:grid-cols-12 gap-gutter">
+<!-- JaneApp Booking Card -->
+<div class="md:col-span-7 bg-warm-cream rounded-xl p-8 md:p-12 border border-clinical-sage/20 flex flex-col justify-between" id="booking">
+<div class="space-y-stack-md">
+<span class="material-symbols-outlined text-4xl text-clinical-sage mb-4 block" data-icon="calendar_month">calendar_month</span>
+<h2 class="font-headline-lg text-headline-lg text-deep-charcoal">Book an Appointment</h2>
+<p class="font-body-md text-body-md text-secondary">
+                            Existing and new patients can securely book online through JaneApp. If you are a new patient, consider booking a complimentary discovery call first.
+                        </p>
+</div>
+<div class="mt-8">
+<a class="inline-flex items-center gap-2 bg-clinical-sage hover:bg-success-green text-warm-cream font-label-md text-label-md px-8 py-4 rounded transition-all active:scale-95 w-full md:w-auto justify-center" href="#">
+                            Book via JaneApp
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Direct Contact Info -->
+<div class="md:col-span-5 flex flex-col gap-gutter">
+<!-- Email Card -->
+<div class="bg-warm-cream rounded-xl p-8 border border-clinical-sage/20 flex-1 flex flex-col justify-center">
+<span class="material-symbols-outlined text-2xl text-clinical-sage mb-2" data-icon="mail">mail</span>
+<h3 class="font-label-md text-label-md text-secondary mb-1 uppercase tracking-wider">Email</h3>
+<a class="font-headline-md text-headline-md text-deep-charcoal hover:text-clinical-sage transition-colors" href="mailto:info@healingtheory.ca">
+                            info@healingtheory.ca
+                        </a>
+</div>
+<!-- Phone Card -->
+<div class="bg-warm-cream rounded-xl p-8 border border-clinical-sage/20 flex-1 flex flex-col justify-center">
+<span class="material-symbols-outlined text-2xl text-clinical-sage mb-2" data-icon="call">call</span>
+<h3 class="font-label-md text-label-md text-secondary mb-1 uppercase tracking-wider">Phone</h3>
+<a class="font-headline-md text-headline-md text-deep-charcoal hover:text-clinical-sage transition-colors" href="tel:416-690-7077">
+                            416-690-7077
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Inquiry Form & Map -->
+<section class="py-section-gap px-margin-x max-w-container-max mx-auto">
+<div class="grid md:grid-cols-2 gap-16 lg:gap-24">
+<!-- Form -->
+<div>
+<div class="mb-8 space-y-stack-sm">
+<h2 class="font-headline-lg text-headline-lg text-deep-charcoal">Send an Inquiry</h2>
+<p class="font-body-md text-body-md text-secondary">Have a quick question? Fill out the form below and my team will get back to you within 24-48 hours.</p>
+</div>
+<form class="space-y-stack-md">
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-secondary mb-1" for="first-name">First Name</label>
+<input class="bg-transparent border-0 border-b border-outline-variant focus:border-clinical-sage focus:ring-0 px-0 py-2 font-body-md text-deep-charcoal transition-colors" id="first-name" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-secondary mb-1" for="last-name">Last Name</label>
+<input class="bg-transparent border-0 border-b border-outline-variant focus:border-clinical-sage focus:ring-0 px-0 py-2 font-body-md text-deep-charcoal transition-colors" id="last-name" type="text"/>
+</div>
+</div>
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-secondary mb-1" for="email">Email Address</label>
+<input class="bg-transparent border-0 border-b border-outline-variant focus:border-clinical-sage focus:ring-0 px-0 py-2 font-body-md text-deep-charcoal transition-colors" id="email" type="email"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-md text-label-md text-secondary mb-1" for="message">Message</label>
+<textarea class="bg-transparent border-0 border-b border-outline-variant focus:border-clinical-sage focus:ring-0 px-0 py-2 font-body-md text-deep-charcoal transition-colors resize-none" id="message" rows="4"></textarea>
+</div>
+<div class="pt-4">
+<button class="border border-deep-charcoal text-deep-charcoal hover:bg-deep-charcoal hover:text-warm-cream font-label-md text-label-md px-8 py-3 rounded transition-colors w-full md:w-auto" type="submit">
+                                Send Message
+                            </button>
+</div>
+</form>
+</div>
+<!-- Map & Location -->
+<div class="space-y-stack-md flex flex-col">
+<div class="bg-warm-cream p-8 rounded-xl border border-clinical-sage/20 space-y-4">
+<h3 class="font-headline-md text-headline-md text-deep-charcoal flex items-center gap-2">
+<span class="material-symbols-outlined text-clinical-sage" data-icon="location_on">location_on</span>
+                            Clinic Location
+                        </h3>
+<p class="font-body-md text-body-md text-secondary">
+                            Healing Theory<br/>
+                            Toronto, Ontario<br/>
+                            (Full address provided upon booking)
+                        </p>
+</div>
+<div class="flex-1 relative rounded-xl overflow-hidden border border-soft-linen min-h-[300px]">
+<img class="absolute inset-0 w-full h-full object-cover grayscale opacity-80 mix-blend-multiply" data-alt="A stylized, minimalist map illustration of Toronto, highlighting the east end near the beaches. The map uses a muted palette of soft sage greens, warm creams, and subtle charcoal lines, fitting a premium, calm medical aesthetic." data-location="Toronto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvnw2ceftEKwvhWm_AWEWvrKnYI9kOmDSkeQQzvcFz26Pb3Wnf3AuNUMeH1wZF0fTzmXkMsqNAxw85FoJLte4Iqlc_oAcjvp9ZtsW6wxtNl36n4YFUH_v4VjQoNlnQlrOy5K6NYxSSCNCipSOU97X2uIGACTxMGIcH87vqBbIrHFg1kmqM3h_WQQSw5hQx-RfnMS7rAgmsS10bYgu6ppIMAxQ4qdozmmgg845WjRbfpWPwn2PFlhpp"/>
+<div class="absolute inset-0 bg-clinical-sage/10 pointer-events-none"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQs -->
+<section class="py-section-gap px-margin-x max-w-3xl mx-auto border-t border-clinical-sage/10">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-deep-charcoal">Frequently Asked Questions</h2>
+</div>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<div class="border-b border-outline-variant py-4">
+<button class="w-full flex justify-between items-center text-left focus:outline-none group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.icon').textContent = this.nextElementSibling.classList.contains('hidden') ? 'add' : 'remove';">
+<span class="font-headline-md text-headline-md text-deep-charcoal text-xl group-hover:text-clinical-sage transition-colors">How should I prepare for my first visit?</span>
+<span class="material-symbols-outlined icon text-clinical-sage font-light transition-transform" data-icon="add">add</span>
+</button>
+<div class="hidden pt-4 pb-2">
+<p class="font-body-md text-body-md text-secondary">
+                            Please ensure you have completed the online intake forms sent via JaneApp at least 24 hours prior to your appointment. Bring any recent lab work or medical records that may be relevant to your health concerns.
+                        </p>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="border-b border-outline-variant py-4">
+<button class="w-full flex justify-between items-center text-left focus:outline-none group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.icon').textContent = this.nextElementSibling.classList.contains('hidden') ? 'add' : 'remove';">
+<span class="font-headline-md text-headline-md text-deep-charcoal text-xl group-hover:text-clinical-sage transition-colors">Do you accept insurance?</span>
+<span class="material-symbols-outlined icon text-clinical-sage font-light transition-transform" data-icon="add">add</span>
+</button>
+<div class="hidden pt-4 pb-2">
+<p class="font-body-md text-body-md text-secondary">
+                            Naturopathic services are typically not covered by OHIP, but they are covered by most extended health benefit plans. We do not offer direct billing, but will provide you with a detailed invoice to submit to your provider for reimbursement.
+                        </p>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="border-b border-outline-variant py-4">
+<button class="w-full flex justify-between items-center text-left focus:outline-none group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.icon').textContent = this.nextElementSibling.classList.contains('hidden') ? 'add' : 'remove';">
+<span class="font-headline-md text-headline-md text-deep-charcoal text-xl group-hover:text-clinical-sage transition-colors">What is your cancellation policy?</span>
+<span class="material-symbols-outlined icon text-clinical-sage font-light transition-transform" data-icon="add">add</span>
+</button>
+<div class="hidden pt-4 pb-2">
+<p class="font-body-md text-body-md text-secondary">
+                            We require 48 hours notice for appointment cancellations or rescheduling. Appointments changed or cancelled with less than 48 hours notice will be subject to a cancellation fee equal to the cost of the visit.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap px-margin-x flex flex-col items-center space-y-stack-lg bg-soft-linen dark:bg-deep-charcoal border-t border-clinical-sage/10">
+<div class="font-headline-md text-headline-md text-deep-charcoal dark:text-warm-cream">
+            Dr. Karin McFarlin, ND
+        </div>
+<div class="flex flex-wrap justify-center gap-gutter">
+<a class="text-secondary hover:text-success-green transition-colors font-body-md text-body-md" href="#">Privacy Policy</a>
+<a class="text-secondary hover:text-success-green transition-colors font-body-md text-body-md" href="#">Terms of Service</a>
+<a class="text-secondary hover:text-success-green transition-colors font-body-md text-body-md" href="#">Patient Portal</a>
+<a class="text-secondary hover:text-success-green transition-colors font-body-md text-body-md" href="#">JaneApp Booking</a>
+</div>
+<div class="text-center">
+<p class="font-caption text-caption text-secondary">
+                © 2024 Dr. Karin McFarlin, ND. All rights reserved. Naturopathic medical services provided with evidence-based integrity.
+            </p>
+</div>
+</footer>
+<script>
+        // Simple nav scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+</body></html>
