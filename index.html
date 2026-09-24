@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Karin McFarlin, ND | Naturopathic Doctor Toronto</title>
+  <meta name="description" content="Dr. Karin McFarlin, ND — Naturopathic Doctor in Toronto. Helping you find the root cause and restore lasting health." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#425646',
+            'primary-light': '#5a6e5d',
+            'primary-dark': '#2f3e32',
+            sage: '#7A8C7E',
+            cream: '#FDFBF7',
+            linen: '#ECE9E4',
+            charcoal: '#1A1C1D',
+          },
+          fontFamily: {
+            heading: ['Cormorant Garamond', 'serif'],
+            body: ['Open Sans', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Open Sans', sans-serif; color: #1A1C1D; background: #FDFBF7; }
+    h1, h2, h3, .font-heading { font-family: 'Cormorant Garamond', serif; }
+    .nav-link { position: relative; }
+    .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: #425646; transition: width 0.3s; }
+    .nav-link:hover::after { width: 100%; }
+  </style>
+</head>
+<body class="bg-cream text-charcoal">
+
+  <!-- NAV -->
+  <nav class="bg-cream border-b border-linen sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="font-heading text-xl text-primary font-semibold tracking-wide">
+        Dr. Karin McFarlin, <span class="font-normal italic">ND</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link text-sm font-medium text-charcoal hover:text-primary transition-colors">Home</a>
+        <a href="about.html" class="nav-link text-sm font-medium text-charcoal hover:text-primary transition-colors">About</a>
+        <a href="services.html" class="nav-link text-sm font-medium text-charcoal hover:text-primary transition-colors">Services</a>
+        <a href="resources.html" class="nav-link text-sm font-medium text-charcoal hover:text-primary transition-colors">Shop</a>
+        <a href="contact.html" class="nav-link text-sm font-medium text-charcoal hover:text-primary transition-colors">Contact</a>
+        <a href="https://thehealingtheory.janeapp.com/#/staff_member/3" target="_blank"
+           class="bg-primary text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-primary-dark transition-colors">
+          Book Appointment
+        </a>
+      </div>
+      <!-- Mobile menu button -->
+      <button id="menuBtn" class="md:hidden text-charcoal" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden border-t border-linen bg-cream px-6 py-4 space-y-4">
+      <a href="index.html" class="block text-sm font-medium text-charcoal hover:text-primary">Home</a>
+      <a href="about.html" class="block text-sm font-medium text-charcoal hover:text-primary">About</a>
+      <a href="services.html" class="block text-sm font-medium text-charcoal hover:text-primary">Services</a>
+      <a href="resources.html" class="block text-sm font-medium text-charcoal hover:text-primary">Shop</a>
+      <a href="contact.html" class="block text-sm font-medium text-charcoal hover:text-primary">Contact</a>
+      <a href="https://thehealingtheory.janeapp.com/#/staff_member/3" target="_blank"
+         class="block bg-primary text-white text-sm font-medium px-5 py-2.5 rounded-full text-center hover:bg-primary-dark transition-colors">
+        Book Appointment
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="bg-cream pt-16 pb-20 md:pt-24 md:pb-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-sage text-sm font-medium tracking-widest uppercase mb-4">Naturopathic Doctor · Toronto, Ontario</p>
+          <h1 class="font-heading text-5xl md:text-6xl text-charcoal leading-tight mb-6">
+            Helping You Find Answers. Restoring Health. <span class="text-primary italic">Helping You Thrive.</span>
+          </h1>
+          <p class="text-charcoal/70 text-lg leading-relaxed mb-8">
+            I combine evidence-based medicine with holistic, individualized care to identify the underlying causes of illness—not simply manage symptoms.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="https://thehealingtheory.janeapp.com/#/staff_member/3" target="_blank"
+               class="bg-primary text-white font-medium px-8 py-3.5 rounded-full hover:bg-primary-dark transition-colors">
+              Book a Discovery Call
+            </a>
+            <a href="about.html"
+               class="border border-primary text-primary font-medium px-8 py-3.5 rounded-full hover:bg-primary hover:text-white transition-colors">
+              Learn More
+            </a>
+          </div>
+          <p class="mt-6 text-sm text-charcoal/50 italic">"Healing begins when you feel truly heard."</p>
+        </div>
+        <div class="relative">
+          <div class="absolute inset-0 bg-primary/10 rounded-2xl transform translate-x-4 translate-y-4"></div>
+          <img src="assets/karin.jpg" alt="Dr. Karin McFarlin, ND"
+               class="relative w-full max-w-sm mx-auto rounded-2xl object-cover shadow-lg" style="aspect-ratio: 3/4; object-position: center top;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AREAS OF FOCUS -->
+  <section class="bg-linen py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <p class="text-sage text-sm font-medium tracking-widest uppercase mb-3">What I Treat</p>
+        <h2 class="font-heading text-4xl text-charcoal">Areas of Clinical Focus</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card -->
+        <div class="bg-cream rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-charcoal mb-2">Women's Health</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">PMS, PMDD, PCOS, fertility, perimenopause, and menopause support.</p>
+        </div>
+        <div class="bg-cream rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-charcoal mb-2">Digestive Health</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">IBS, SIBO, bloating, reflux, food sensitivities, and gut microbiome restoration.</p>
+        </div>
+        <div class="bg-cream rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-charcoal mb-2">Metabolic Health</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">Weight loss resistance, blood sugar balance, insulin resistance, and cardiovascular health.</p>
+        </div>
+        <div class="bg-cream rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/></svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-charcoal mb-2">Holistic Dermatology</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">Acne, rosacea, eczema, inflammatory skin conditions, and healthy skin aging.</p>
+        </div>
+        <div class="bg-cream rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-charcoal mb-2">Longevity & Aging</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">Proactive strategies to optimize health, vitality, and quality of life as you age.</p>
+        </div>
+        <div class="bg-cream rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3M6.343 6.343l-.707-.707m0 11.314l.707.707M12 21v-1m0-16a5 5 0 00-5 5c0 2.76 2.24 5 5 5s5-2.24 5-5a5 5 0 00-5-5z"/></svg>
+          </div>
+          <h3 class="font-heading text-xl font-semibold text-charcoal mb-2">Chronic Illness</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">Autoimmune conditions, persistent fatigue, chronic pain, and complex symptoms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="bg-cream py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-14">
+        <p class="text-sage text-sm font-medium tracking-widest uppercase mb-3">The Process</p>
+        <h2 class="font-heading text-4xl text-charcoal">How It Works</h2>
+        <p class="mt-4 text-charcoal/60 max-w-xl mx-auto">A clear, structured path toward understanding your body and restoring lasting health.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-14 h-14 bg-primary text-white font-heading text-2xl rounded-full flex items-center justify-center mx-auto mb-5">1</div>
+          <h3 class="font-heading text-2xl text-charcoal mb-3">Discovery Call</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">A complimentary 15-minute consultation to discuss your primary concerns and determine if we're the right fit.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 bg-primary text-white font-heading text-2xl rounded-full flex items-center justify-center mx-auto mb-5">2</div>
+          <h3 class="font-heading text-2xl text-charcoal mb-3">Comprehensive Assessment</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">An in-depth review of your health history, current symptoms, and functional lab testing recommendations.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 bg-primary text-white font-heading text-2xl rounded-full flex items-center justify-center mx-auto mb-5">3</div>
+          <h3 class="font-heading text-2xl text-charcoal mb-3">Personalized Plan</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">A tailored treatment protocol including nutrition, lifestyle adjustments, and targeted supplementation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE / CTA BANNER -->
+  <section class="bg-primary py-16">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="font-heading text-3xl md:text-4xl text-white italic mb-6">
+        "I believe healing begins when patients feel truly heard."
+      </h2>
+      <p class="text-white/75 mb-8 leading-relaxed">Take the first step toward a healthier, more vibrant you. Schedule a complimentary discovery call today.</p>
+      <a href="https://thehealingtheory.janeapp.com/#/staff_member/3" target="_blank"
+         class="inline-block bg-white text-primary font-semibold px-8 py-3.5 rounded-full hover:bg-cream transition-colors">
+        Book Your Discovery Call
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-charcoal text-white/60 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h4 class="font-heading text-xl text-white mb-3">Dr. Karin McFarlin, ND</h4>
+          <p class="text-sm leading-relaxed">Naturopathic Doctor · The Healing Theory · Toronto, Ontario</p>
+        </div>
+        <div>
+          <h4 class="text-white text-sm font-semibold mb-3 uppercase tracking-wider">Navigation</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+            <li><a href="resources.html" class="hover:text-white transition-colors">Shop</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white text-sm font-semibold mb-3 uppercase tracking-wider">Contact</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="mailto:info@healingtheory.ca" class="hover:text-white transition-colors">info@healingtheory.ca</a></li>
+            <li><a href="tel:4166907077" class="hover:text-white transition-colors">416-690-7077</a></li>
+            <li class="pt-2"><a href="https://thehealingtheory.janeapp.com/#/staff_member/3" target="_blank" class="text-white font-medium hover:underline">Book Online →</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 text-xs text-center">
+        <p>© 2026 Dr. Karin McFarlin, ND. All rights reserved. This website does not constitute medical advice and does not establish an ND/patient relationship.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
