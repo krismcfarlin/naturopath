@@ -251,7 +251,7 @@
         <div>
           <h2 class="font-heading text-3xl text-charcoal mb-2">Send an Inquiry</h2>
           <p class="text-charcoal/60 text-sm mb-6">Have a question before booking? My team will respond within 24–48 hours.</p>
-          <form action="https://formspree.io/f/drkarinnd" method="POST" class="space-y-5">
+          <form id="contactForm" class="space-y-5">
             <div class="grid sm:grid-cols-2 gap-4">
               <div>
                 <label class="block text-xs font-semibold text-charcoal/60 uppercase tracking-wider mb-1.5">First Name</label>
@@ -280,10 +280,11 @@
               <label class="block text-xs font-semibold text-charcoal/60 uppercase tracking-wider mb-1.5">Message</label>
               <textarea name="message" rows="5" class="w-full border border-linen bg-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors resize-none" placeholder="Tell me a little about your health concerns or questions..."></textarea>
             </div>
-            <button type="submit"
+            <button id="submitBtn" type="submit"
                class="w-full bg-primary text-white font-semibold py-3.5 rounded-full hover:bg-primary-dark transition-colors text-sm">
               Send Message
             </button>
+            <p id="formMsg" class="text-xs text-center hidden"></p>
             <p class="text-xs text-charcoal/40 text-center">We respect your privacy and will never share your information.</p>
           </form>
         </div>
@@ -393,6 +394,31 @@
     </div>
   </footer>
 
+
+  <!-- EmailJS — replace the three YOUR_* values after setting up at emailjs.com -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    emailjs.init({ publicKey: 'YOUR_PUBLIC_KEY' });
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = document.getElementById('submitBtn');
+      var msg = document.getElementById('formMsg');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+        .then(function() {
+          btn.textContent = 'Message sent!';
+          msg.textContent = 'Thanks — we’ll be in touch within 24–48 hours.';
+          msg.className = 'text-xs text-center text-primary';
+          e.target.reset();
+        }, function() {
+          btn.textContent = 'Send Message';
+          btn.disabled = false;
+          msg.textContent = 'Something went wrong — please email us directly at info@healingtheory.ca';
+          msg.className = 'text-xs text-center text-red-500';
+        });
+    });
+  </script>
 
   <!-- Location Picker Modal -->
   <div id="locationModal" style="display:none;background:rgba(26,28,29,0.6)" class="fixed inset-0 z-[200] flex items-center justify-center p-4" onclick="closeBooking()">
